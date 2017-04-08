@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/tween.js.png?downloads=true)](https://www.npmjs.com/package/tween.js)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-tween.js/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-tween.js%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-tween.js/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-tween.js/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-tween.js%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-tween.js/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-tween.js/build/screenCapture.npmPackageListing.svg)
 
