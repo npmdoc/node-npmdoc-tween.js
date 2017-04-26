@@ -1,6 +1,6 @@
 # npmdoc-tween.js
 
-#### api documentation for  [tween.js (v16.6.0)](https://github.com/tweenjs/tween.js)  [![npm package](https://img.shields.io/npm/v/npmdoc-tween.js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tween.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tween.js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tween.js)
+#### basic api documentation for  [tween.js (v16.6.0)](https://github.com/tweenjs/tween.js)  [![npm package](https://img.shields.io/npm/v/npmdoc-tween.js.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tween.js) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tween.js.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tween.js)
 
 #### Super simple, fast and easy to use tweening engine which incorporates optimised Robert Penner's equations.
 
@@ -67,7 +67,8 @@
         "test-style": "jscs --config test/jscs.json src/Tween.js",
         "test-unit": "nodeunit test/unit/nodeunitheadless.js"
     },
-    "version": "16.6.0"
+    "version": "16.6.0",
+    "bin": {}
 }
 ```
 
