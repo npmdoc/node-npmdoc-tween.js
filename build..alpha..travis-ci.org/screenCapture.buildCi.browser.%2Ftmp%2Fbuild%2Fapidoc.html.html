@@ -499,7 +499,23 @@ requestAnimationFrame(animate);
 			_tweens.push(tween);
 
 		}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+		return this;
+
+	};
+
+	this.start = function (time) {
+
+		TWEEN.<span class="apidocCodeKeywordSpan">add</span>(this);
+
+		_isPlaying = true;
+
+		_onStartCallbackFired = false;
+
+		_startTime = time !== undefined ? time : TWEEN.now();
+		_startTime += _delayTime;
+...</pre></li>
     </ul>
 
 
@@ -534,7 +550,23 @@ requestAnimationFrame(animate);
 		// Convert [seconds, nanoseconds] to milliseconds.
 		return time[0] * 1000 + time[1] / 1000000;
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+			if (_tweens.length === 0) {
+				return false;
+			}
+
+			var i = 0;
+
+			time = time !== undefined ? time : TWEEN.<span class="apidocCodeKeywordSpan">now</span>();
+
+			while (i &lt; _tweens.length) {
+
+				if (_tweens[i].update(time) || preserve) {
+					i++;
+				} else {
+					_tweens.splice(i, 1);
+...</pre></li>
     </ul>
 
 
@@ -555,7 +587,23 @@ requestAnimationFrame(animate);
 			}
 
 		}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+	this.stop = function () {
+
+		if (!_isPlaying) {
+			return this;
+		}
+
+		TWEEN.<span class="apidocCodeKeywordSpan">remove</span>(this);
+		_isPlaying = false;
+
+		if (_onStopCallback !== null) {
+			_onStopCallback.call(_object, _object);
+		}
+
+		this.stopChainedTweens();
+...</pre></li>
     </ul>
 
 
